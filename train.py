@@ -191,10 +191,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_path', type=str, required=True)
     parser.add_argument('--sheet_name', type=str, default='sheet1')
-    parser.add_argument('--target_col', type=str, default='人数')
+    parser.add_argument('--target_col', type=str, default='demand')
     parser.add_argument('--exo_cols', type=str, nargs='+',
-                        default=['百度指数', '节假日', '最高温', '最低温', '天气', 'Attractions', 'Accessibility',
-                                 'Amenities', 'Available Packages', 'Activities', 'Ancillary Services'])
+                        default=['feature_1', 'feature_2', 'feature_3', 'feature_4', 'feature_5', 'feature_6', 'feature_7',
+                                 'feature_8', 'feature_9', 'feature_10', 'feature_11'])
     parser.add_argument('--pred_horizon', type=int, default=1)
     parser.add_argument('--batch_len', type=int, default=7)
     parser.add_argument('--step', type=int, default=1)
